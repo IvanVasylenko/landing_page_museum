@@ -318,36 +318,64 @@
 
         @include background("/images/img/backgraund_old-art.svg");
       }
+    }
+
+    @media (min-width: $tablet) {
+      display: block;
 
       &-img-angel {
         position: absolute;
-        left: -185px;
-        top: 60px;
+        left: 0;
+        top: 200px;
 
-        width: 628px;
-        height: 816px;
+        width: 267px;
+        height: 346px;
+
+        @media (min-width: $desktop) {
+          left: -50px;
+          top: 60px;
+  
+          width: 534px;
+          height: 692px;
+        }
 
         @include background("/images/img/show-angel.png");
       }
 
       &-img-people {
         position: absolute;
-        left: 668px;
-        top: 782px;
+        left: 400px;
+        top: 632px;
 
-        width: 761px;
-        height: 465px;
+        width: 323px;
+        height: 197px;
+
+        @media (min-width: $desktop) {
+          left: 600px;
+          top: 782px;
+
+          width: 647px;
+          height: 395px;
+        }
 
         @include background("/images/img/show-people.png");
       }
 
       &-img-cossack {
         position: absolute;
-        left: -14px;
-        top: 1332px;
+        left: -50px;
+        top: 882px;
 
-        width: 584px;
-        height: 499px;
+        width: 292px;
+        height: 250px;
+
+        @media (min-width: $desktop) {
+          left: 0;
+          top: 1332px;
+
+          width: 524px;
+          height: 449px;
+        }
 
         @include background("/images/img/show-cossack.png");
       }
